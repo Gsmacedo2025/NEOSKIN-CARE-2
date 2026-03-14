@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neoskin Care - Inteligência para sua pele. Em breve, revolucionando o cuidado com a pele.">
+    <meta name="theme-color" content="#f5f1ed">
+    <title>Neoskin Care - Em Breve</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background: linear-gradient(to bottom, #f5f1ed, #faf8f5, #f5f1ed);
+            color: #3d3d3d;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+
+        .divider {
+            width: 100%;
+            max-width: 28rem;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #c9a961, transparent);
+            opacity: 0.5;
+            margin-bottom: 4rem;
+        }
+
+        .logo-section {
+            margin-bottom: 3rem;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .logo-image {
+            width: 100%;
+            max-width: 20rem;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+
+        .main-message {
+            text-align: center;
+            max-width: 42rem;
+            margin-bottom: 4rem;
+            animation: fadeIn 1s ease-out 0.4s both;
+        }
+
+        .main-message h3 {
+            font-size: 2.25rem;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+            line-height: 1.4;
+        }
+
+        .main-message p {
+            font-size: 1rem;
+            color: #6b6b6b;
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        .email-form {
+            width: 100%;
+            max-width: 28rem;
+            margin-bottom: 3rem;
+            animation: fadeIn 1s ease-out 0.6s both;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        @media (min-width: 640px) {
+            .form-group {
+                flex-direction: row;
+            }
+        }
+
+        .input-wrapper {
+            flex: 1;
+            position: relative;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 0.75rem 1.25rem;
+            background: white;
+            border: 1px solid #e0d9d0;
+            color: #3d3d3d;
+            font-family: 'Lato', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+            border-radius: 0.25rem;
+        }
+
+        input[type="email"]::placeholder {
+            color: #a0a0a0;
+        }
+
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #c9a961;
+        }
+
+        button {
+            padding: 0.75rem 2rem;
+            background-color: #c9a961;
+            color: white;
+            border: none;
+            font-family: 'Lato', sans-serif;
+            font-size: 1rem;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 0.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            white-space: nowrap;
+        }
+
+        button:hover:not(:disabled) {
+            background-color: #b8975a;
+        }
+
+        button:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .success-message {
+            font-size: 0.875rem;
+            color: #c9a961;
+            margin-top: 0.75rem;
+            text-align: center;
+            font-weight: 300;
+            display: none;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+
+        .divider-bottom {
+            width: 100%;
+            max-width: 28rem;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #c9a961, transparent);
+            opacity: 0.5;
+        }
+
+        .footer {
+            margin-top: 4rem;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #8a8a8a;
+            font-weight: 300;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .main-message h3 {
+                font-size: 1.875rem;
+            }
+
+            .main-message p {
+                font-size: 0.9375rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Decorative line top -->
+        <div class="divider"></div>
+
+        <!-- Logo Section -->
+        <div class="logo-section">
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663229753202/AJqH3mk6Fqi8n3YA3uVsqV/neoskin-care-logo-PbbaxzZxTjaBYqnzm5sDB8.webp" alt="Neoskin Care - Inteligência para sua pele" class="logo-image">
+        </div>
+
+        <!-- Main Message -->
+        <div class="main-message">
+            <h3>Em Construção</h3>
+            <p>Estamos preparando algo extraordinário para revolucionar seus cuidados com a pele. Deixe seu email para ser notificado quando lançarmos.</p>
+        </div>
+
+        <!-- Email Subscription Form -->
+        <form class="email-form" id="emailForm">
+            <div class="form-group">
+                <div class="input-wrapper">
+                    <input type="email" id="emailInput" placeholder="Seu email" required>
+                </div>
+                <button type="submit" id="submitBtn">Notifique-me</button>
+            </div>
+            <div class="success-message" id="successMessage">
+                ✓ Obrigado! Você receberá atualizações em breve.
+            </div>
+        </form>
+
+        <!-- Decorative line bottom -->
+        <div class="divider-bottom"></div>
+
+        <!-- Footer text -->
+        <div class="footer">
+            <p>© 2026 Neoskin Care. Todos os direitos reservados.</p>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('emailForm');
+        const emailInput = document.getElementById('emailInput');
+        const submitBtn = document.getElementById('submitBtn');
+        const successMessage = document.getElementById('successMessage');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            if (!emailInput.value) return;
+
+            // Disable button and show loading state
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Enviando...';
+
+            // Simulate sending
+            setTimeout(() => {
+                // Show success message
+                successMessage.classList.add('show');
+                submitBtn.innerHTML = '✓ Confirmado!';
+
+                // Reset after 3 seconds
+                setTimeout(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Notifique-me';
+                    successMessage.classList.remove('show');
+                    emailInput.value = '';
+                }, 3000);
+            }, 800);
+        });
+    </script>
+</body>
+</html>
